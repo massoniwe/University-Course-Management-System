@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//main
 public class Main {
     public static void main(String[] args) {
         Course oop = new Course("Objected-Oriented Programming", 5);
