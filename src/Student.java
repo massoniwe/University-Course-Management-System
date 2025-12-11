@@ -7,6 +7,7 @@ public class Student {
         this.age = age;
         this.course = course;
     }
+
     public String getName(){
         return name;
     }
