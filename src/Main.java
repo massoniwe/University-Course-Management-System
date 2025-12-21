@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 //main
 
@@ -44,6 +45,12 @@ public class Main {
         aitu.PrintALL();
         ((Professor) ad).giveLecture(true);
         ((Professor) ad).givePractice(false);
+        ArrayList<Student> firstCourse = aitu.getStudentsByCourse(1);
+        System.out.println("Students in course 1:");
+        for (Student s : firstCourse) {
+            System.out.println(s);
+        }
+
     }
 }
 

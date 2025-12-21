@@ -44,5 +44,18 @@ public class University {
     public String getAddress(){ return address;}
     public void setName(String name){this.name = name;}
     public void setAddress(String address){this.address = address;}
+    public ArrayList<Student> getStudentsByCourse(int course) {
+        ArrayList<Student> result = new ArrayList<>();
+        for (Person p : people) {
+            if (p instanceof Student) {
+                Student s = (Student) p;
+                if (s.getCourse() == course) {
+                    result.add(s);
+                }
+            }
+        }
+        return result;
+    }
+
 }
 
