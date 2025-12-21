@@ -1,10 +1,9 @@
-public class Professor {
-    private String name;
+public class Professor extends Person{
     private String surname;
     private String academicDegree;
 
-    public Professor(String name, String surname, String academicDegree) {
-        this.name = name;
+    public Professor(String name, int age, String surname, String academicDegree) {
+        super(name,age);
         this.surname=surname;
         this.academicDegree=academicDegree;
     }
@@ -18,8 +17,10 @@ public class Professor {
     }
     public String getSurname() {return surname;}
     public String getAcademicDegree() {return academicDegree;}
-    public String getName(){return name;}
     public void setSurname(String surname){ this.surname=surname;}
     public void setAcademicDegree(String academicDegree){this.academicDegree=academicDegree;}
-    public void setName(String name){this.name=name;}
+    @Override
+    public String getRole(){
+        return "Professor";
+    }
 }
